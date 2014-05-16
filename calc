@@ -38,6 +38,6 @@ var firstNum = parseInt(program.args[0]);
 var secondNum = parseInt(program.args[1]);
 
 
-console.log(firstNum + " + " + secondNum + " is " + calculations.add(firstNum, secondNum));
+console.log(firstNum + " " + symbol + " "+ secondNum + " is " + calculations[math](firstNum, secondNum));
 
 console.log(program.args);
