@@ -1,0 +1,29 @@
+{
+  "name": "command-line",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "commander": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.18.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arielspear/jsi-command-line.git"
+  },
+  "author": "Ariel Spear",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arielspear/jsi-command-line/issues"
+  },
+  "homepage": "https://github.com/arielspear/jsi-command-line"
+}

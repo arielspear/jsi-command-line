@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+var calculations = require('./calculations');
+var program = require('commander');
+
+var math = 'add';
+var symbol ='+';
+
+
+program
+  .version('0.0.1')
+  .option('-a, --add, --plus', 'use addition')
+  .option('-s, --sub, --minus', 'use subtraction')
+  .option('-m, --mult, --multi, --multiply', 'use multiplication')
+  .option('-d, --dev, --devide', 'use devision')
+ 
+  .parse(process.argv);
+
+if (program.add) {
+	math = 'add';
+	symbol = '+';
+}
+if (program.sub) {
+	math = 'sub';
+	symbol = '-';
+}
+if (program.mult) {
+	math = 'mult';
+	symbol = '*';
+}
+if (program.dev) {
+	math = 'dev';
+	symbol = '/';
+}
+
+
+var firstNum = parseInt('process.args[0]');
+var secondNum = parseInt('process.args[1]');
+
+
+if (program.math) console.log(firstNum + " " + symbol + " " + secondNum + " is " + calculations.math(firstNum, secondNum));
+
+console.log(program.args);
