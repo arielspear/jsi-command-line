@@ -39,5 +39,3 @@ var secondNum = parseInt(program.args[1]);
 
 
 console.log(firstNum + " " + symbol + " "+ secondNum + " is " + calculations[math](firstNum, secondNum));
-
-console.log(program.args);
