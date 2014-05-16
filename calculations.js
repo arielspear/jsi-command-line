@@ -1,7 +1,4 @@
 
-var calc = require('./calc');
-
-
 
 module.exports.add = function(x, y){
 	return x + y;
